@@ -25,7 +25,7 @@ i:hover {
 
 /*========== Top Bar ===========*/
 #top-bar {
-    background: #FBFBFB;
+    background-image: linear-gradient(130deg,#0db14b,#3ede7a);
     border-bottom: 1px solid #F2F2F2;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -41,6 +41,9 @@ i:hover {
 
 .address ul li {
     padding-left: 25px;
+    font-size: medium;
+    font-weight: 700;
+    color: #fff;
 }
 
 .social {
@@ -61,6 +64,7 @@ i:hover {
 .navbar {
     padding: 0;
     border-radius: 0;
+    background-image: linear-gradient(130deg,#0db14b,#3ede7a);
 }
 .navbar-brand {
   float: none;
@@ -79,6 +83,7 @@ i:hover {
 /*========== Home Page Slider ===========*/
 .carousel {
   position: static;
+  background: linear-gradient(130deg,#0db14b,#3ede7a);
 }
 
 .carousel-inner > .carousel-item > img {
@@ -108,11 +113,11 @@ i:hover {
     padding: 0 !important;
     margin: 0;
     font-weight: 400;
-background: rgb(255,130,130);
-  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
-  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
-  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+    background: rgb(255,130,130);
+    background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+    background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
   
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -120,8 +125,8 @@ background: rgb(255,130,130);
 .header-text p {
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-radial-gradient(110% 50%, circle, #D5797A 0%,#53488C 100%,#D5797A);
-    background-image: radial-gradient( circle at 110% 50%, #D5797A 0%,#53488C 100%,#D5797A);
+  background-image: -webkit-radial-gradient(110% 50% circle, #bb0204 0%,#050021 100%,#fffcfc);
+    background-image: radial-gradient(circle at 110% 50%, #bb0204 0%,#050021 100%,#fffcfc);
   text-decoration: underline;
   animation-name: pan-gradient;
   animation-iteration-count: infinite;
@@ -352,16 +357,17 @@ i.fa.fa-pagelines {
 
 /*========== Achivement ===========*/
 #achivement {
-    background-image: url(../img/achivment.png);
+    background-image: url(../img/achivment.jpg);
     color: #fff;
-    padding-top: 112px;
+    padding-top: 100px;
     padding-bottom: 113px;
 }
 #achivement h1 {
-     font-family: 'Roboto Slab', serif;
-     text-transform: uppercase;
-     font-size: 36px;
-     line-height: 2;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    color: aquamarine;
+    font-weight: 600;
+    line-height: 2;
 }
 #achivement p {
      font-family: 'Open Sans', sans-serif;
@@ -409,7 +415,7 @@ i.fa.fa-pagelines {
 }
 
 #event .news1 {
-    float: right;
+  float: right;
 	width: 50%;
 	padding: 0.9em;
 	position: relative;
@@ -693,7 +699,7 @@ span {
 
 /*========= Contact =========*/
 #contact {
-    background-color: #eeeeee;
+    background-image: url(../img/contact.jpg);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -706,7 +712,7 @@ span {
 }
 #contact center p {
      font-family: 'Open Sans', sans-serif;
-     color: #666;
+     color: #352b2b;
      font-size: 16px;
      line-height: 1;
      padding-bottom: 25px;
@@ -724,7 +730,7 @@ span {
     padding-left: 0;
 }
 #contact ul li {
-    color: #696969;
+    color: #2d0101;
     padding-bottom: 10px;
 }
 #contact input {
@@ -733,9 +739,9 @@ span {
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #d4d4d4;
+    background-color: transparent;
     background-image: none;
-    border: 1px solid #D7DBDC;
+    border: 2px solid #fff;
     color: #717171;
     font-style: italic;
     border-radius: 0 !important;
@@ -752,7 +758,7 @@ span {
 }
 #contact textarea {
     max-width: 535px !important;
-    background-color: #d4d4d4 !important;
+    background-color: transparent; !important;
     border-radius: 0 !important;
 }
 #contact textarea:focus {
@@ -773,8 +779,7 @@ textarea, input {
     color: #fff;
     background-color: #43a906;
     min-width: 170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 12px 13px;
     border-radius: 0;
     border: 0;
 }
