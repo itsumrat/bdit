@@ -1,7 +1,8 @@
 /*=========== Fonts ==============*/
-@import '//fonts.googleapis.com/css?family=Roboto+Slab';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
 @import 'https://fonts.googleapis.com/css?family=Lato';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
 /* =========== Global ============ */
 body {
     background-color: #fff;
@@ -40,7 +41,7 @@ i:hover {
 }
 
 .address ul li {
-    padding-left: 25px;
+    font-size: 0.9rem !important;
     font-size: medium;
     font-weight: 700;
     color: #fff;
@@ -65,6 +66,9 @@ i:hover {
     padding: 0;
     border-radius: 0;
     background-image: linear-gradient(130deg,#0db14b,#3ede7a);
+}
+.navbar-bdit a {
+  color: #fff;
 }
 .navbar-brand {
   float: none;
@@ -258,51 +262,44 @@ i.fa.fa-pagelines {
     color: #43a906;
 }
 
-/*=========== Volunteer ============*/
-#volunteer {
+/*=========== work together ============*/
+#work-together {
     font-family: 'Open Sans', sans-serif;
-    background-color: #222222;
+    background-color: #EDDD3E;
     color: #fff;
     padding-top: 102px;
     padding-bottom: 102px;
 }
-#volunteer h1 {
+#work-together h1 {
     font-size: 45px;
     line-height: 1;
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 25px;
+    padding-top: 2rem;
 }
-#volunteer h1 span {
+#work-together h1 span {
     color: #43a906;
 }
-#volunteer p {
+#work-together p {
     font-size: 14px;
     line-height: 1.5;
 }
-#volunteer a:hover {
+#work-together a:hover {
     color: inherit;
-}
-.btn-volunteer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 2;
-    color: #fff;
-    background-color: #43a906;
-    margin-top: 2.8em;
-    margin-left: 3em;
-    min-width: 170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 0;
 }
 
 /*========== Works ===========*/
 #works {
-    padding-top: 116px;
     padding-bottom: 116px;
+}
+#works .project-header {
+  background-image: linear-gradient(130deg,#0db14b,#3ede7a);
+}
+#works .project-header .project-header-body {
+  background-color: #fff;
+  margin: 0 calc(50% - 512px + 0rem);
+  padding: 2rem 2rem 0;
 }
 #works h1 {
     font-family: 'Roboto Slab', serif;
@@ -377,7 +374,8 @@ i.fa.fa-pagelines {
 }
 #achivement .achived h3 {
     font-family: 'Roboto Slab', serif;
-    font-size: 30px;
+    font-size: 4em;
+    color: #AA9D39;
 }
 #achivement .achived hr {
     background-color: #fff;
@@ -661,36 +659,6 @@ span {
     padding-bottom: 0;
 }
 
-/*============ Buy Theme ============*/
-#buy-theme {
-    background-image: url(../img/buy-theme.jpg);
-}
-#buy-theme h1 {
-    font-family: 'Roboto Slab', serif;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 36px;
-    line-height: 2;
-    padding-top: 77px;
-    padding-bottom: 77px;
-    margin-bottom: 0;
-}
-#buy-theme .btn-purchase {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 2;
-    color: #fff;
-    background-color: #43a906;
-    min-width: 170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 87px;
-    border-radius: 0;
-    float: right;
-}
-
 /*========== Theme Store ===========*/
 #theme-store {
     padding-top: 77px;
@@ -699,7 +667,7 @@ span {
 
 /*========= Contact =========*/
 #contact {
-    background-image: url(../img/contact.jpg);
+    background-image: url(../img/contact-bg.jpg);
     padding-top: 100px;
     padding-bottom: 100px;
 }
