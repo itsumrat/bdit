@@ -660,14 +660,19 @@ span {
 }
 
 /*========== Theme Store ===========*/
-#theme-store {
+/*#theme-store {
     padding-top: 77px;
     padding-bottom: 77px;
-}
+}*/
 
 /*========= Contact =========*/
 #contact {
     background-image: url(../img/contact-bg.jpg);
+    ​-webkit-background-size: cover;
+    -moz-background-size: cover;
+    o-background-size: cover;
+    background-size: cover;
+    position:relative;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -683,7 +688,7 @@ span {
      color: #352b2b;
      font-size: 16px;
      line-height: 1;
-     padding-bottom: 25px;
+     padding-bottom: 50px;
 }
 #contact h4 {
      font-family: 'Roboto Slab', sans-serif;
@@ -692,6 +697,7 @@ span {
      line-height: 1;
      padding-bottom: 15px;
      text-transform: uppercase;
+     padding-bottom: 25px;
 }
 #contact ul {
     list-style: none;
@@ -727,7 +733,8 @@ span {
 #contact textarea {
     max-width: 535px !important;
     background-color: transparent; !important;
-    border-radius: 0 !important;
+    border: 1px solid #fff;
+    border-radius: 0;
 }
 #contact textarea:focus {
     border: 1px solid gray;
@@ -752,12 +759,91 @@ textarea, input {
     border: 0;
 }
 
+/*-------------- Map -----------------*/
+.map {
+  text-align: center;
+}
+.fa-map-marker {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 1s infinite linear;
+    -o-animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 1s infinite linear;
+    animation: bounce 1s infinite linear;
+}
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+/*================================================*/
+/*  ---------------   About Page 
+/*================================================*/
+#highlighted {
+  background :url(https://raw.githubusercontent.com/JulianLaval/canvas-particle-network/master/img/demo-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+#highlighted h1 {
+  display: block;
+  margin: 0px auto 10px;
+  padding: 0px;
+  text-align: center;
+  color: #FFF;
+  font-size: 3.2vw;
+  letter-spacing: 0.025em;
+}
+
+#highlighted a {
+  color: #fff;
+}
+
+.highlight-btn {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 0;
+  margin-top: 2rem;
+}
+
 /*========== Footer ==========*/
 footer {
     background-color: #222;
     line-height: 2;
-    padding-bottom: 45px;
-    padding-top: 45px;
+    padding: 2rem 3rem;
     color: #fff;
 }
 footer p {
